@@ -10,19 +10,13 @@ class Mentor
 end
     
 class RailsMentor < Mentor
-    attr_accessor :suffix
-    def initialize(suffix)
-    super(suffix)
-    self.suffix = suffix
-    end
-    
     def job
-        puts "#{self.suffix}です。私はRubyとRailsでWebアプリケーションを作ります。"
+        puts "#{self.name}です。私はRubyとRailsでWebアプリケーションを作ります。"
     end
 end
     
-    job_A = Mentor.new("煌木")
-    job_B = RailsMentor.new("赤出")
+    kirameki = Mentor.new("煌木")
+    akaide = RailsMentor.new("赤出")
     
-    job_A.job
-    job_B.job
+    kirameki.job
+    akaide.job
